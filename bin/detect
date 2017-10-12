@@ -3,11 +3,15 @@
 BUILD_DIR=$1
 
 if [ -e $BUILD_DIR/bin/karaf ]; then
-	echo "Karaf start file foud"
+	echo "Karaf start file found"
 	echo "pwd is `pwd`"
 	echo "$BUILD_DIR"
 	ls -all
 	exit 0
 else
+	echo "Karaf start file not found"
+	echo "pwd is `pwd`"
+	echo "$BUILD_DIR"
+	ls -all
 	exit 1
 fi
