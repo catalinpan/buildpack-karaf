@@ -3,9 +3,11 @@
 BUILD_DIR=$1
 
 if [ -e $BUILD_DIR/bin/karaf ]; then
-	echo "Karaf"
+	echo "Karaf start file foud"
+	echo "pwd is `pwd`"
+	echo "$BUILD_DIR"
+	ls -all
 	exit 0
 else
 	exit 1
 fi
-
